@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Game cost prediction</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/index.css">
+</head>
+
+<div class="container align-items-center">
+  <div class="predict_form">
+    <h1>Predict current value of a game</h1>
+    <h3>Enter input values for prediction</h3>
+
+    <form action="{{ url_for('predict')}}" method="post">
+      <input type="integer" name="Starting_Price" placeholder="10" required="required" />
+      <label for="Starting_Price">Original price of the game in USD</label><br>
+      <input type="integer" name="Owners" placeholder="1000" required="required"/>
+      <label for="Owners">How many current Owners (in 000's)? </label><br>
+      <input type="integer" name="age" placeholder="10" required="required" />
+      <label for="age">How old is the game (in years)?</label><br>
+      <input type="text" name="Multiplayer" placeholder="1" required="required" />
+      <label for="Multiplayer">Does the game have Multiplayer?</label><br>
+      <input type="text" name="DLC" placeholder="1" required="required" />
+      <label for="DLC">Does the game have DLC?</label><br>
+      <button type="submit" class="btn">Predict</button>
+    </form>
+    <br>
+    <p>
+      {{ prediction_text }}
+    </p>
+  </div>
+</div>
