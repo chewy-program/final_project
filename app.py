@@ -2,23 +2,13 @@ import numpy as np
 import os
 import pandas as pd 
 from flask import Flask, render_template, request, flash
-# from flask_wtf import FlaskForm
 from wtforms import IntegerField, BooleanField
 import pickle #Initialize the flask App
 
 
 app = Flask(__name__)
-# secret_key = os.urandom(32)
-# app.config["SECRET_KEY"] = "some string"
 model = pickle.load(open('model.pkl', 'rb'))
-# class predict_form(FlaskForm):
-#     startingprice = IntegerField('Starting_Price')
-#     owners = IntegerField('Owners')
-#     age = IntegerField('age')
-#     multiplayer = BooleanField("Multiplayer")
-#     DLC = BooleanField("DLC")
-# form = predict_form
-#default page of our web-app
+
 @app.route('/')
 def home():
     return render_template("index.html")
