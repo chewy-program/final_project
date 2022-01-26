@@ -35,8 +35,13 @@ The correlation of all columns can be found here:
 
 ![image](https://user-images.githubusercontent.com/83536188/151108360-f38a1555-e0fb-4933-b534-d9fd6d06e7be.png)
 
+and the residual plots of all the different models can be found below: 
+
 ![image](https://user-images.githubusercontent.com/83536188/151108433-de60f46b-fb0b-41cc-bd57-0143bcc5c7fc.png)
 
 ![image](https://user-images.githubusercontent.com/83536188/151108460-9349ac5d-d499-4e43-b37b-3cfa4a7c11e6.png)
 
 ![image](https://user-images.githubusercontent.com/83536188/151108475-63ac682f-aa02-4cc2-ab47-3a9576b224a3.png)
+
+
+Overall I can conclude that the model is accurate to $20, then becomes less accurate as the value increases. 
