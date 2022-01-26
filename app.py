@@ -1,8 +1,7 @@
 import numpy as np
 import os
 import pandas as pd 
-from flask import Flask, render_template, request, flash
-from wtforms import IntegerField, BooleanField
+from flask import Flask, render_template, request
 import pickle #Initialize the flask App
 
 
