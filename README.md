@@ -1,4 +1,4 @@
-# final_project
+# Steam Price Predictor
 The App is designed to predict the current cost of a Steam application using data gathered from the Steam API 
 
 The app is deployed at this address:  
